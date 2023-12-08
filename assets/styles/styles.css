@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+    "menu"
+    "filter"
+    "products"
+    "footer";
+}
+
+#menu{
+    grid-area: menu;
+    background-color: #00a9d4;
+    min-height: 10vh;
+    color: white;
+}
+
+#filter{
+    grid-area: filter;
+    background-color: #40ffdc;
+    min-height: 15vh;
+    color: white;
+}
+
+#products{
+    grid-area: products;
+    background-color: white;
+    min-height: 65vh;
+    color: white;
+}
+
+#footer{
+    grid-area: footer;
+    background-color: #1c3166;
+    min-height: 10vh;
+    color: white;
+}
