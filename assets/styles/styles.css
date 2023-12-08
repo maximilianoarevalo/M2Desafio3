@@ -53,6 +53,10 @@
     background-color: #1c3166;
     min-height: 10vh;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu .menu-title{
@@ -138,4 +142,9 @@
 /* para evitar dobles bordes */
 .product-pagination a:last-child{
     border-right: 0.2px solid #002c53;
+}
+
+.footer{
+    font-size: 20px;
+    color: white;
 }
