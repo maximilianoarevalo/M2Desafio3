@@ -41,6 +41,11 @@
     background-color: white;
     min-height: 65vh;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 #footer{
@@ -73,3 +78,64 @@
     border-radius: 5px;
 }
 
+.product-card{
+    background-color: white;
+    border: 1px solid lightgray;
+    height: 50vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card img{
+    width: auto;
+    height: 38vh;
+    padding-bottom: 20px;
+}
+
+.product-name{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+
+.product-price{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.product-more{
+    width: 30%;
+    height: 4vh;
+    background-color: #002c53;
+    color: white;
+    transition-duration: 0.5s;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.product-more:hover{
+    background-color: #004378;
+    color: #fafafa;
+    cursor: pointer;
+}
+
+.product-pagination a {
+    border-left: 0.2px solid #002c53;
+    border-top: 0.2px solid #002c53;
+    border-bottom: 0.2px solid #002c53;
+    color: #002c53;;
+    float: left;
+    padding: 10px 10px;
+    text-decoration: none;
+    width: auto;
+}
+
+/* para evitar dobles bordes */
+.product-pagination a:last-child{
+    border-right: 0.2px solid #002c53;
+}
