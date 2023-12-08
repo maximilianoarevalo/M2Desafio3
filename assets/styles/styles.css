@@ -13,11 +13,16 @@
     "footer";
 }
 
+/* layout grid */
+
 #menu{
     grid-area: menu;
-    background-color: #00a9d4;
+    background-color: #1c3166;
     min-height: 10vh;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #filter{
@@ -39,4 +44,14 @@
     background-color: #1c3166;
     min-height: 10vh;
     color: white;
+}
+
+.menu .menu-title{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.menu .menu-burger{
+    font-size: 30px;
+    margin-right: 30px;
 }
