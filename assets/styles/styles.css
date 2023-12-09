@@ -148,3 +148,86 @@
     font-size: 20px;
     color: white;
 }
+
+@media screen and (min-width: 576px){
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+        "menu filter"
+        "menu products"
+        "menu products"
+        "footer products";
+    }
+
+    #menu{
+        grid-area: menu;
+        background-color: #1c3166;
+        min-height: 80vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 15vw;
+    }
+    
+    #filter{
+        grid-area: filter;
+        background-color: #40ffdc;
+        min-height: 15vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 85vw;
+    }
+    
+    #products{
+        grid-area: products;
+        background-color: white;
+        min-height: 85vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 85vw;
+    }
+    
+    #footer{
+        grid-area: footer;
+        background-color: #0f1934;
+        min-height: 20vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 15vw;
+    }
+
+    .menu .menu-burger{
+        display: none;
+    }
+
+    .menu .menu-title{
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .menu .menu-options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu .menu-options span{
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    
+    
+}
