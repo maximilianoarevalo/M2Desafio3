@@ -190,7 +190,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 85vw;
+        width: 87vw;
     }
     
     #products{
@@ -200,7 +200,7 @@
         color: white;
         display: flex;
         flex-direction: column;
-        width: 85vw;
+        width: 87vw;
     }
     
     #footer{
@@ -233,6 +233,13 @@
     .menu .menu-options span{
         padding: 5px;
         font-size: 20px;
+    }
+
+    .filter .filter-select select{
+        max-width: 100vw;
+        height: 4vh;
+        padding-left: 10px;
+        border-radius: 5px;
     }
 
     .product-gallery{
